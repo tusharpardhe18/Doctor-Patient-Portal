@@ -12,9 +12,4 @@
       "dest": "/api/index.js"
     }
   ],
-  "env": {
-    "MONGO_URI": "your-mongodb-uri",
-    "CLOUDINARY_URL": "your-cloudinary-url",
-    "ANOTHER_ENV": "another-value"
-  }
 }
