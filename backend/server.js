@@ -14,16 +14,9 @@ const app = express()
 connectDB()
 connectCloudinary()
 
-const corsConfig = {
-    origin: "*",
-    methods: ["GET", "POST", "PUT", "DELETE"],
-    credentials: true,
-}
-
 // Middlewares
 app.use(express.json())
-app.options("", cors(corsConfig))
-app.use(cors(corsConfig))
+app.use(cors())
 
 // API endpoints
 app.use('/api/admin', adminRouter) //localhost:4000/api/admin/add-doctor
