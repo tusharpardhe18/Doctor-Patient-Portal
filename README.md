@@ -33,3 +33,4 @@ Prescripto is a comprehensive healthcare appointment booking system that connect
 ### Installation
 
 1. Clone the repository:
+git clone https://github.com/your-username/prescripto.git
