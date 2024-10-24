@@ -7,10 +7,8 @@ import adminRouter from './routes/adminRoute.js'
 import doctorRouter from './routes/doctorRoute.js'
 import userRouter from './routes/userRoute.js'
 
-// Create a function to initialize the serverless handler
 const app = express()
-
-// Connect to DB and cloud services only once
+const port = process.env.PORT || 4000
 connectDB()
 connectCloudinary()
 
